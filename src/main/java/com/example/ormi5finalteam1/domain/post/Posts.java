@@ -3,8 +3,6 @@ package com.example.ormi5finalteam1.domain.post;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Timestamp;
-
 @Entity
 @Table(name = "posts")
 @Getter
@@ -12,7 +10,7 @@ import java.sql.Timestamp;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Posts {
+public class Posts extends BaseEntity {
 
     @Id
     @Column(name = "posts_id")
@@ -27,14 +25,5 @@ public class Posts {
 
     @Column
     private Integer view_count;
-
-    @Column
-    private Timestamp created_at;
-
-    @Column
-    private Timestamp updated_at;
-
-    @Column
-    private Timestamp deleted_at;
 
 }
