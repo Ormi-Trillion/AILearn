@@ -1,4 +1,4 @@
-package com.example.ormi5finalteam1.domain.post;
+package com.example.ormi5finalteam1.domain.posts;
 
 import jakarta.persistence.*;
 import lombok.*;
